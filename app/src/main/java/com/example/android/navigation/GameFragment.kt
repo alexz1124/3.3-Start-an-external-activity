@@ -101,7 +101,7 @@ class GameFragment : Fragment() {
                     } else {
                         // Using directions to navigate to the GameWonFragment
                         view.findNavController()
-                                .navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
+                                .navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions,questionIndex))
                     }
                 } else {
                     // Using directions to navigate to the GameOverFragment
